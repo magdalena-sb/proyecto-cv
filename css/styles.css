@@ -383,6 +383,7 @@ i{
 }
   
 form{
+    margin: auto;
     max-width: 200px;
     display: flex;
     flex-direction: column;
@@ -476,11 +477,7 @@ footer{
     }
 
     .barras{
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-
-    form{
-        margin: 0 auto;
     }
 }
