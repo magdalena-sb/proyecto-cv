@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyce Mitchelle</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css\styles.css">
+
+    <!--Tipografía-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+    <!--Íconos-->
+    <script src="https://kit.fontawesome.com/7ec55f3e5e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+        <!--MENÚ-->
+            <nav class="nav-bar"> 
+                
+                <div class="menu-btn" id="menu-btn" onclick="abrirMenu()">
+                        <div class="bar" id="bar1"></div>
+                        <div class="bar" id="bar2"></div>
+                        <div class="bar" id="bar3"></div>
+                </div>
+
+                <div id="menu" class="menu-content"> 
+                    <a href="#inicio">Sobre mí</a>
+                    <a href="#datos_personales">Datos personales</a>
+                    <a href="#experiencia">Experiencia</a>
+                    <a href="#formacion">Formación académica</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </nav>
+        </header>
+
+        <!--FOTO Y PRESENTACIÓN-->
+        <div id="inicio">
+            <div class="principal">
+                <img id="foto" src="https://randomuser.me/api/portraits/women/76.jpg" alt="Imagen de una mujer.">
+                <h1 class="nombre">Joyce Mitchelle</h1>
+                <h2>Lic. en Ciencias Biológicas y Profesora de Biología</h2>           
+            </div>
+    
+            <div class="sobremi"> 
+                <h3 class="subtitulo">Sobre mí</i></h3>
+                <p>Mi formación y mi experiencia me permitió aprender a trabajar tanto individualmente como en equipo, a ser organizada y flexible, a pensar soluciones alternativas ante un problema, a analizar datos y situaciones, y plantear objetivos a partir de lo observado. Me apasiona aprender cosas nuevas todo el tiempo y me adapto con facilidad a nuevas tareas. </p>
+                <a class="contact-btn" href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>        
+        </div>
+        
+        <!--DETALLES DEL CV: SECCIONES-->
+        <main>
+            <!--SECCIÓN 1: DATOS PERSONALES-->
+            <section class="section" id="datos_personales">
+                <h3 class="subtitulo"><i class="fa-solid fa-id-card"></i>Datos personales</h3>
+                <ul>
+                    <li><i class="fa-solid fa-cake-candles"></i><span class="dato"></i>Fecha de nacimiento:</span> 08/05/1995</li>
+                    <li><i class="fa-solid fa-location-dot"></i><span class="dato">Lugar de residencia:</span> Moreno, Buenos Aires</li>
+                    <li><i class="fa-solid fa-globe"></i><span class="dato">Nacionalidad:</span> Argentina</li>
+                </ul>
+            </section>
+
+            <!--SECCIÓN 2: EXPERIENCIA-->
+            <section id="experiencia" >
+                <h3 class="subtitulo"><i class="fa-solid fa-briefcase"></i>Experiencia</h3>
+                <ul class="lista">
+                    <li><span class="periodo">2020-2022</span>
+                        <ul>
+                            <li> <span class="caret">Profesora particular</span>
+                                <ul class="nested">
+                                    <li>Clases personalizadas a estudiantes de nivel medio de materias relacionadas a las ciencias naturales. </li>
+                                    <li>Uso de diferentes estrategias didácticas.</li>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </li>
+                    <li><span class="periodo">2018-2019</span> Laboratorio de Transducción de señales | Universidad de Buenos Aires
+                        <ul>
+                            <li> <span class="caret">Pasante</span>
+                                <ul class="nested">
+                                    <li>Preparación de soluciones, reactivos y medios de cultivo. </li>
+                                    <li>Uso de técnicas básicas de biología molecular, como Western Blot y electroforesis en gel de agarosa. </li>
+                                    <li>Diseño de experimentos.</li>
+                                    <li>Análisis y discusión de resultados.</li>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!--SECCIÓN 3: FORMACIÓN-->
+            <section id="formacion">
+                <h3 class="subtitulo"><i class="fa-solid fa-graduation-cap"></i>Formación académica</h3>
+                <ul class="lista">
+                    <li><span class="periodo">2022 - 2023 </span><span class="dato">Primeros pasos del desarrollo frontend | </span> Ticmas </li>
+                    <li><span class="periodo">2020 - 2021 </span><span class="dato">Profesorado en Enseñanza Media y Superior de Biología | </span> Universidad de Buenos Aires </li>
+                    <li><span class="periodo">2014 - 2019 </span><span class="dato">Licenciatura en Ciencias Biológicas | </span> Universidad de Buenos Aires </li>
+                </ul>
+            </section>
+
+            <!--SECCIÓN 4: HABILIDADES-->
+            <section id="habilidades"> 
+                <h3 class="subtitulo"><i class="fa-solid fa-list"></i>Habilidades</h3>
+                <div class="subsection">
+                    <!--Hard Skills-->
+                    <div class="hard_skills">
+                        <ul>
+                            <li> Diseño de experimentos</li>
+                            <li> Análisis de datos. </li>
+                            <li> Planificación de clases de enseñanza media y superior.</li>
+                            <li> Uso de diferentes estrategias didácticas: analogías, simulaciones, resolución de problemas, entre otros.</li>
+                            <li> Idiomas: Inglés, Portugués. </li>
+                            <li> Programación: HTML, CSS, JavaScript. </li>
+                        </ul>
+                        <button type="button" class=boton id="boton" onclick="verMas()">Ver detalles</i></button>
+
+                        <div class="porcentajes" id="porcentajes">
+                            <div class="barras">
+                                <!--Habilidad 1-->
+                                <div class="skill">
+                                    <!--Texto-->
+                                    <div class="skill_txt">
+                                        <h4>Inglés</h4>
+                                        <span>C1</span>
+                                    </div>
+                                    <!--Barra-->
+                                    <div class="externo">
+                                        <div class="interno"></div>
+                                    </div>
+                                </div>
+
+                                <!--Habilidad 2-->
+                                <div class="skill">
+                                    <!--Texto-->
+                                    <div class="skill_txt">
+                                        <h4>Portugués</h4>
+                                        <span>B2</span>
+                                    </div>
+                                    <!--Barra-->
+                                    <div class="externo">
+                                        <div class="interno"></div>
+                                    </div>
+                                </div>
+
+                                <!--Habilidad 3-->
+                                <div class="skill">
+                                    <!--Texto-->
+                                    <div class="skill_txt">
+                                        <h4>HTML</h4>
+                                    </div>
+                                    <!--Barra-->
+                                    <div class="externo">
+                                        <div class="interno"></div>
+                                    </div>
+                                </div>
+
+                                <!--Habilidad 4-->
+                                <div class="skill">
+                                    <!--Texto-->
+                                    <div class="skill_txt">
+                                        <h4>CSS</h4>
+                                    </div>
+                                    <!--Barra-->
+                                    <div class="externo">
+                                        <div class="interno"></div>
+                                    </div>
+                                </div>
+
+                                <!--Habilidad 5-->
+                                <div class="skill">
+                                    <!--Texto-->
+                                    <div class="skill_txt">
+                                        <h4>JavaScript</h4>
+                                    </div>
+                                    <!--Barra-->
+                                    <div class="externo">
+                                        <div class="interno"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Soft Skills-->
+                    <div class="soft_skills">
+                        <ul>
+                            <li> Pensamiento crítico.</li>
+                            <li> Trabajo en equipo.</li>
+                            <li> Aprendizaje constante.</li>
+                            <li> Flexibilidad.</li>
+                            <li> Comunicación.</li>
+                            <li> Empatía.</li>
+                            <li> Flexibilidad.</li>
+                        </ul>
+                    </div>              
+                </div>     
+            </section>
+            
+            <!--SECCIÓN 5: CONTACTO-->
+            <section id="form">
+                <h3 class="subtitulo"><i class="fa-solid fa-message"></i>Contacto</h3>
+                <form action="#" method="post" >
+                    <label>E-mail</label>
+                    <input type="email" id="email" placeholder="Ingrese su correo electrónico." required>
+                    <label>Mensaje</label>
+                    <textarea placeholder="Ingrese su mensaje aquí." rows="10" cols="40"></textarea>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </section>
+        </main>
+
+        <!--CONTACTO-->
+        <footer class="contacto" id="contacto">
+            <p><i class="fa-solid fa-envelope"></i> joyce.mitchelle@example.com / <i class="fa-brands fa-whatsapp"></i>(930) 734-6571</p>
+        </footer>
+    </div>
+    
+    <!--JavaScript-->
+    <script src="js\script.js"></script>         
+            
+</body>
+</html>
