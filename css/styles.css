@@ -383,7 +383,7 @@ i{
 }
   
 form{
-    margin: auto;
+    margin: 0px 100px;
     max-width: 200px;
     display: flex;
     flex-direction: column;
