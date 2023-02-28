@@ -135,6 +135,7 @@ h2{
   
 /*SECCIONES*/
 .subtitulo{
+    margin-top: 30px;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 25px;
     text-transform: uppercase;
@@ -479,5 +480,9 @@ footer{
     .barras{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    form {
+        margin:0 auto;
     }
 }
